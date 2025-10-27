@@ -27,7 +27,7 @@ Login_Demoblaze
 *** Keywords ***
 Open Demoblaze
     [Arguments]     ${browser}
-    Open browser    ${URL}    ${browser}
+    Open browser    ${URL}    ${browser}     executable_path=C:\\bin\\chromedriver.exe
     Maximize browser window
 
 Fill Login Form
