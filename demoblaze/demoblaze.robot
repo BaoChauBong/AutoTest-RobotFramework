@@ -41,6 +41,7 @@ Submit Login Form
 
 Verify Login Success
     Wait until element is visible    ${txt_wellcome_admin}    ${timeout}
+    Capture Page Screenshot
 
 Login Demoblaze on ${browser} with ${username} and ${password}
     Open Demoblaze          ${browser}
