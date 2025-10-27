@@ -17,7 +17,6 @@ ${timeout}                  10s
 ${username_data}            admin
 ${password_data}            admin
 ${web_browser}              chrome
-${executable_path}          /Users/trungnguyen/Documents/training-auto/web_automation/chromedriver
 
 *** Test Cases ***
 Login_Demoblaze
@@ -28,7 +27,8 @@ Login_Demoblaze
 *** Keywords ***
 Open Demoblaze
     [Arguments]     ${browser}
-    Open browser    ${URL}    ${browser}     executable_path=${executable_path}
+    Open browser    ${URL}    ${browser}
+    Maximize browser window
 
 Fill Login Form
     [Arguments]    ${username}      ${password}

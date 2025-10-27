@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-27T23:22:33.328088" rpa="false" schemaversion="5">
+<suite id="s1" name="Demoblaze" source="D:\GITHUB_CLONE\AutoTest-RobotFramework\demoblaze\demoblaze.robot">
+<test id="s1-t1" name="Login_Demoblaze" line="22">
+<kw name="Login Demoblaze on chrome with admin and admin" source_name="Login Demoblaze on ${browser} with ${username} and ${password}">
+<kw name="Open Demoblaze">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-27T23:22:33.578685" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-27T23:22:33.578429" elapsed="2.733430"/>
+</kw>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-10-27T23:22:33.577740" elapsed="2.734292"/>
+</kw>
+<kw name="Fill Login Form">
+<kw name="Common - Click Element">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-27T23:22:36.312954" elapsed="0.024972"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-27T23:22:36.338357" level="INFO">Clicking element 'id=login2'.</msg>
+<msg time="2025-10-27T23:22:37.597297" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-27T23:22:37.597467" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (300, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79f53e8e5+80021]
+	GetHandleVerifier [0x0x7ff79f53e940+80112]
+	(No symbol) [0x0x7ff79f2c060f]
+	(No symbol) [0x0x7ff79f320a39]
+	(No symbol) [0x0x7ff79f31e3be]
+	(No symbol) [0x0x7ff79f31b2e1]
+	(No symbol) [0x0x7ff79f31a1a0]
+	(No symbol) [0x0x7ff79f30b7c8]
+	(No symbol) [0x0x7ff79f34122a]
+	(No symbol) [0x0x7ff79f30b056]
+	(No symbol) [0x0x7ff79f341440]
+	(No symbol) [0x0x7ff79f36968a]
+	(No symbol) [0x0x7ff79f341003]
+	(No symbol) [0x0x7ff79f3095d1]
+	(No symbol) [0x0x7ff79f30a3f3]
+	GetHandleVerifier [0x0x7ff79f7fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff79f7f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff79f818977+3070247]
+	GetHandleVerifier [0x0x7ff79f5583ce+185214]
+	GetHandleVerifier [0x0x7ff79f55fe1f+216527]
+	GetHandleVerifier [0x0x7ff79f547b24+117460]
+	GetHandleVerifier [0x0x7ff79f547cdf+117903]
+	GetHandleVerifier [0x0x7ff79f52dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffbb2c1e8d7+23]
+	RtlUserThreadStart [0x0x7ffbb3b0c53c+44]
+</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-10-27T23:22:36.338123" elapsed="1.262112">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (300, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79f53e8e5+80021]
+	GetHandleVerifier [0x0x7ff79f53e940+80112]
+	(No symbol) [0x0x7ff79f2c060f]
+	(No symbol) [0x0x7ff79f320a39]
+	(No symbol) [0x0x7ff79f31e3be]
+	(No symbol) [0x0x7ff79f31b2e1]
+	(No symbol) [0x0x7ff79f31a1a0]
+	(No symbol) [0x0x7ff79f30b7c8]
+	(No symbol) [0x0x7ff79f34122a]
+	(No symbol) [0x0x7ff79f30b056]
+	(No symbol) [0x0x7ff79f341440]
+	(No symbol) [0x0x7ff79f36968a]
+	(No symbol) [0x0x7ff79f341003]
+	(No symbol) [0x0x7ff79f3095d1]
+	(No symbol) [0x0x7ff79f30a3f3]
+	GetHandleVerifier [0x0x7ff79f7fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff79f7f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff79f818977+3070247]
+	GetHandleVerifier [0x0x7ff79f5583ce+185214]
+	GetHandleVerifier [0x0x7ff79f55fe1f+216527]
+	GetHandleVerifier [0x0x7ff79f547b24+117460]
+	GetHandleVerifier [0x0x7ff79f547cdf+117903]
+	GetHandleVerifier [0x0x7ff79f52dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffbb2c1e8d7+23]
+	RtlUserThreadStart [0x0x7ffbb3b0c53c+44]
+</status>
+</kw>
+<arg>${btn_login}</arg>
+<arg>${timeout}</arg>
+<status status="FAIL" start="2025-10-27T23:22:36.312625" elapsed="1.287814">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (300, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79f53e8e5+80021]
+	GetHandleVerifier [0x0x7ff79f53e940+80112]
+	(No symbol) [0x0x7ff79f2c060f]
+	(No symbol) [0x0x7ff79f320a39]
+	(No symbol) [0x0x7ff79f31e3be]
+	(No symbol) [0x0x7ff79f31b2e1]
+	(No symbol) [0x0x7ff79f31a1a0]
+	(No symbol) [0x0x7ff79f30b7c8]
+	(No symbol) [0x0x7ff79f34122a]
+	(No symbol) [0x0x7ff79f30b056]
+	(No symbol) [0x0x7ff79f341440]
+	(No symbol) [0x0x7ff79f36968a]
+	(No symbol) [0x0x7ff79f341003]
+	(No symbol) [0x0x7ff79f3095d1]
+	(No symbol) [0x0x7ff79f30a3f3]
+	GetHandleVerifier [0x0x7ff79f7fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff79f7f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff79f818977+3070247]
+	GetHandleVerifier [0x0x7ff79f5583ce+185214]
+	GetHandleVerifier [0x0x7ff79f55fe1f+216527]
+	GetHandleVerifier [0x0x7ff79f547b24+117460]
+	GetHandleVerifier [0x0x7ff79f547cdf+117903]
+	GetHandleVerifier [0x0x7ff79f52dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffbb2c1e8d7+23]
+	RtlUserThreadStart [0x0x7ffbb3b0c53c+44]
+</status>
+</kw>
+<kw name="Common - Input Text">
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+<arg>${timeout}</arg>
+<status status="NOT RUN" start="2025-10-27T23:22:37.600672" elapsed="0.000051"/>
+</kw>
+<kw name="Common - Input Text">
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+<arg>${timeout}</arg>
+<status status="NOT RUN" start="2025-10-27T23:22:37.600845" elapsed="0.000029"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-10-27T23:22:36.312265" elapsed="1.288717">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (300, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79f53e8e5+80021]
+	GetHandleVerifier [0x0x7ff79f53e940+80112]
+	(No symbol) [0x0x7ff79f2c060f]
+	(No symbol) [0x0x7ff79f320a39]
+	(No symbol) [0x0x7ff79f31e3be]
+	(No symbol) [0x0x7ff79f31b2e1]
+	(No symbol) [0x0x7ff79f31a1a0]
+	(No symbol) [0x0x7ff79f30b7c8]
+	(No symbol) [0x0x7ff79f34122a]
+	(No symbol) [0x0x7ff79f30b056]
+	(No symbol) [0x0x7ff79f341440]
+	(No symbol) [0x0x7ff79f36968a]
+	(No symbol) [0x0x7ff79f341003]
+	(No symbol) [0x0x7ff79f3095d1]
+	(No symbol) [0x0x7ff79f30a3f3]
+	GetHandleVerifier [0x0x7ff79f7fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff79f7f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff79f818977+3070247]
+	GetHandleVerifier [0x0x7ff79f5583ce+185214]
+	GetHandleVerifier [0x0x7ff79f55fe1f+216527]
+	GetHandleVerifier [0x0x7ff79f547b24+117460]
+	GetHandleVerifier [0x0x7ff79f547cdf+117903]
+	GetHandleVerifier [0x0x7ff79f52dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffbb2c1e8d7+23]
+	RtlUserThreadStart [0x0x7ffbb3b0c53c+44]
+</status>
+</kw>
+<kw name="Submit Login Form">
+<status status="NOT RUN" start="2025-10-27T23:22:37.601210" elapsed="0.000032"/>
+</kw>
+<kw name="Verify Login Success">
+<status status="NOT RUN" start="2025-10-27T23:22:37.601338" elapsed="0.000026"/>
+</kw>
+<status status="FAIL" start="2025-10-27T23:22:33.577332" elapsed="4.024124">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (300, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79f53e8e5+80021]
+	GetHandleVerifier [0x0x7ff79f53e940+80112]
+	(No symbol) [0x0x7ff79f2c060f]
+	(No symbol) [0x0x7ff79f320a39]
+	(No symbol) [0x0x7ff79f31e3be]
+	(No symbol) [0x0x7ff79f31b2e1]
+	(No symbol) [0x0x7ff79f31a1a0]
+	(No symbol) [0x0x7ff79f30b7c8]
+	(No symbol) [0x0x7ff79f34122a]
+	(No symbol) [0x0x7ff79f30b056]
+	(No symbol) [0x0x7ff79f341440]
+	(No symbol) [0x0x7ff79f36968a]
+	(No symbol) [0x0x7ff79f341003]
+	(No symbol) [0x0x7ff79f3095d1]
+	(No symbol) [0x0x7ff79f30a3f3]
+	GetHandleVerifier [0x0x7ff79f7fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff79f7f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff79f818977+3070247]
+	GetHandleVerifier [0x0x7ff79f5583ce+185214]
+	GetHandleVerifier [0x0x7ff79f55fe1f+216527]
+	GetHandleVerifier [0x0x7ff79f547b24+117460]
+	GetHandleVerifier [0x0x7ff79f547cdf+117903]
+	GetHandleVerifier [0x0x7ff79f52dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffbb2c1e8d7+23]
+	RtlUserThreadStart [0x0x7ffbb3b0c53c+44]
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-27T23:22:37.601696" elapsed="2.284687"/>
+</kw>
+<tag>login</tag>
+<status status="FAIL" start="2025-10-27T23:22:33.576619" elapsed="6.309882">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (300, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="Samsung1.jpg" alt="First slide"&gt;
+  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79f53e8e5+80021]
+	GetHandleVerifier [0x0x7ff79f53e940+80112]
+	(No symbol) [0x0x7ff79f2c060f]
+	(No symbol) [0x0x7ff79f320a39]
+	(No symbol) [0x0x7ff79f31e3be]
+	(No symbol) [0x0x7ff79f31b2e1]
+	(No symbol) [0x0x7ff79f31a1a0]
+	(No symbol) [0x0x7ff79f30b7c8]
+	(No symbol) [0x0x7ff79f34122a]
+	(No symbol) [0x0x7ff79f30b056]
+	(No symbol) [0x0x7ff79f341440]
+	(No symbol) [0x0x7ff79f36968a]
+	(No symbol) [0x0x7ff79f341003]
+	(No symbol) [0x0x7ff79f3095d1]
+	(No symbol) [0x0x7ff79f30a3f3]
+	GetHandleVerifier [0x0x7ff79f7fdc7d+2960429]
+	GetHandleVerifier [0x0x7ff79f7f7f3a+2936554]
+	GetHandleVerifier [0x0x7ff79f818977+3070247]
+	GetHandleVerifier [0x0x7ff79f5583ce+185214]
+	GetHandleVerifier [0x0x7ff79f55fe1f+216527]
+	GetHandleVerifier [0x0x7ff79f547b24+117460]
+	GetHandleVerifier [0x0x7ff79f547cdf+117903]
+	GetHandleVerifier [0x0x7ff79f52dbb8+11112]
+	BaseThreadInitThunk [0x0x7ffbb2c1e8d7+23]
+	RtlUserThreadStart [0x0x7ffbb3b0c53c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-10-27T23:22:33.329525" elapsed="6.557501"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">login</stat>
+</tag>
+<suite>
+<stat name="Demoblaze" id="s1" pass="0" fail="1" skip="0">Demoblaze</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
